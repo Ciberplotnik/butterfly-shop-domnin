@@ -2,23 +2,14 @@
   background-color: $color-dark;
 }
 
-.header_inner {
-  max-width: 1278px;
-  margin: 0 auto;
-  border: 1px solid red;
-}
-
 .header_row {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  padding: 16px 0 17px;
+  }
 
 .header_logo {
-  background-color: $color-dark;
-  color: $color-light;
+  margin-right: auto;
 }
 
-.header_phone {
-  color: $color-light;
-}

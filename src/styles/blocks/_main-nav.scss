@@ -1,12 +1,16 @@
 .main-nav {
-  background-color: red;
-
   ul {
     display: flex;
-    gap: 30px;
+    gap: 10px;
+    list-style: none;
   }
 
   a {
-    color: $color-light;
+    margin: 0 25px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #fff;
   }
 }
