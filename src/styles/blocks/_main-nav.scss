@@ -3,14 +3,21 @@
     display: flex;
     gap: 10px;
     list-style: none;
-  }
 
-  a {
-    margin: 0 25px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 24px;
-    text-decoration: none;
-    color: #fff;
+    li {
+      padding: 33px 25px;
+
+      &:hover {
+        background-color: $color-accent;
+      }
+
+      a {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
   }
 }
