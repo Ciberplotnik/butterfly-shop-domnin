@@ -2,6 +2,10 @@
   background-color: $color-dark;
 }
 
+.header_inner {
+  @include inner;
+}
+
 .header_row {
   display: flex;
   justify-content: space-between;

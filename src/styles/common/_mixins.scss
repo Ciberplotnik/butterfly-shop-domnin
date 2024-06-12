@@ -2,3 +2,10 @@
   width: $widht;
   margin: 0 auto;
 }
+
+@mixin section-title {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 82px;
+  text-align: center;
+}
