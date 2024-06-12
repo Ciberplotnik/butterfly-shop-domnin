@@ -1,0 +1,28 @@
+.portfolio {
+  padding: 130px 0;
+  text-align: center;
+}
+
+.portfolio_inner {
+  @include inner;
+}
+
+.portfolio_title {
+  @include section-title;
+}
+
+.portfolio_list {
+  display: flex;
+  gap: $gap-column;
+  margin: 100px 0 120px;
+  list-style: none;
+
+  li {
+    width: calc(25% - 60px / 4);
+  }
+}
+
+.portfolio-img {
+  object-fit: cover;
+}
+
