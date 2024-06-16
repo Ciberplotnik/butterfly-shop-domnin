@@ -4,20 +4,20 @@
     gap: 10px;
     list-style: none;
 
-    li {
-      padding: 33px 25px;
-      transition: background-color .5s ease;
-
-      &:hover {
-        background-color: $color-accent;
-      }
-
       a {
+        display: block;
+
+        padding: 33px 25px;
+        transition: background-color .5s ease;
+
         font-weight: 700;
         font-size: 14px;
         line-height: 24px;
         text-decoration: none;
         color: #fff;
+
+        &:hover {
+          background-color: $color-accent;
       }
     }
   }
