@@ -77,23 +77,23 @@
       </div>
     </section>
     <section class="order">
-      <div class="container">
+      <div class="order_inner">
         <h2 class="order_title">Закажи пошив</h2>
         <p class="order_text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
-          встрече он снимет мерки и поможет обределиться с тканью</p>
-        <div class="order_form">
-          <div class="form_cell">
-            <p class="form_text">Ваше имя</p>
-            <div class="form_reg"></div>
+          встрече он снимет мерки и поможет определиться с тканью</p>
+        <form action="#" method="post" class="order-form">
+          <div class="order-form_wrap">
+            <label for="name" class="order-form_label">Ваше имя</label>
+            <input id="name" name="name" type="text" class="order-form_input" placeholder="Иван Иванов">
           </div>
-          <div class="form_cell">
-            <p class="form_text">Телефон</p>
-            <div class="form_reg"></div>
+          <div class="order-form_wrap">
+            <label for="phone" class="order-form_label">Телефон</label>
+            <input id="phone" name="phone" type="tel" class="order-form_input" placeholder="+7 800 888-88-88">
           </div>
-          <div class="form_cell">
-            <button class="btn">Заказать</button>
+          <div class="order-form_wrap">
+            <button type="submit" class="btn btn-full">Заказать</button>
           </div>
-        </div>
+        </form>
       </div>
     </section>
   </main>
