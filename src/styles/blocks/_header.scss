@@ -5,10 +5,24 @@
   z-index: 1000;
   width: 100%;
   background-color: $color-dark;
-}
+
+  @media (max-width: $mobile-max) {
+    padding: 16px 0;
+
+  }
+
+  }
 
 .header_inner {
   @include inner;
+
+  @media (max-width: $tablet-max) {
+    padding: 0 10px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 0 16px;
+  }
 }
 
 .header_row {
@@ -18,7 +32,7 @@
   }
 
 .header_logo {
-  margin-right: auto;
+  // margin-right: auto;
 
   .main-logo {
     transition: transform 1s;
@@ -26,5 +40,13 @@
     &:hover {
       transform: scale(1.2);
     }
+  }
+}
+
+.header_burger {
+  display: none;
+
+  @media (max-width: $mobile-max) {
+    display: block;
   }
 }

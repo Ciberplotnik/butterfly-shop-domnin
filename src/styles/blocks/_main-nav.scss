@@ -1,4 +1,9 @@
 .main-nav {
+
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
+
   ul {
     display: flex;
     gap: 10px;

@@ -6,4 +6,20 @@
   color: #fff;
   text-decoration: none;
 
+  @media (max-width: $tablet-max) {
+    font-size: 36px;
+    line-height: 49px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+.main-logo.main-logo__width-mobile {
+  @media (max-width: $mobile-max) {
+      font-size: 36px;
+      line-height: 49px;
+  }
 }

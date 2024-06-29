@@ -1,5 +1,5 @@
 @mixin inner ($widht: 1276px) {
-  width: $widht;
+  max-width: $widht;
   margin: 0 auto;
 }
 
