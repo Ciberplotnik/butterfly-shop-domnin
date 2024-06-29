@@ -22,7 +22,23 @@
   }
 }
 
+.portfolio_item {
+  position: relative;
+}
+
 .portfolio-img {
   object-fit: cover;
 }
 
+.img-caption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .4);
+
+}
