@@ -1,4 +1,5 @@
 .footer {
+  padding: 31px 0;
   background-color: $color-dark;
 }
 
@@ -8,6 +9,7 @@
 
 .footer_row {
   display: flex;
+  align-items: center;
 }
 
 .footer_contact-phone {
@@ -16,4 +18,25 @@
   line-height: 38px;
   text-decoration: none;
   color: #fff;
+}
+
+.footer_socials {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  }
+
+.footer_contact-phone {
+  display: block;
+  margin-left: auto;
+  margin-right: 60px;
+}
+
+.footer_link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
