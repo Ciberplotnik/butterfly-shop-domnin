@@ -27,6 +27,14 @@
     }
 }
 
+.promo_btn {
+  margin-top: 100px;
+
+  @media (max-width: $mobile-max) {
+    margin-top: 80px;
+  }
+}
+
 .promo_inner {
   @include inner;
 }
