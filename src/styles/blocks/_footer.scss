@@ -1,6 +1,14 @@
 .footer {
   padding: 31px 0;
   background-color: $color-dark;
+
+  @media (max-width: $tablet-max) {
+    padding: 35px 10px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding-top: 30px;
+  }
 }
 
 .footer_inner {
@@ -10,6 +18,10 @@
 .footer_row {
   display: flex;
   align-items: center;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+  }
 }
 
 .footer_contact-phone {
@@ -30,6 +42,17 @@
   display: block;
   margin-left: auto;
   margin-right: 60px;
+
+  @media (max-width: $tablet-max) {
+    margin-right: 50px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .footer_link {
