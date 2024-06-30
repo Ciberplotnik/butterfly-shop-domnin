@@ -1,0 +1,32 @@
+.feedback {
+  padding: 130px 26px;
+}
+
+.feedback_inner {
+  @include inner;
+}
+
+.feedback_title {
+  @include section-title;
+}
+
+.feedback_row {
+  display: flex;
+  align-items: center;
+  gap: 128px;
+  margin-top: 80px;
+}
+
+.feedback_item {
+
+}
+
+.feedback_arrow {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
