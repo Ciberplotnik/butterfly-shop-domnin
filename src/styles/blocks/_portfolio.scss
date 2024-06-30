@@ -105,7 +105,13 @@
   justify-content: center;
   gap: 50px;
   margin-top: 80px;
+  min-width: 954px;
   list-style: none;
+
+  @media (max-width: $tablet-max) {
+    gap: 30px;
+    justify-content: start;
+  }
 }
 
 .portfolio_tag-item {
@@ -123,4 +129,10 @@
 
 .portfolio_tag-link.portfolio_tag-link-activ {
   color: $color-accent;
+}
+
+.portfolio_item__hidden ~ .portfolio_item  {
+  @media (max-width: $mobile-max) {
+    display: none;
+  }
 }
