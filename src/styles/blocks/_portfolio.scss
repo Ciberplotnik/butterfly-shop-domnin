@@ -35,12 +35,12 @@
 
 .portfolio_list {
   display: flex;
+  flex-wrap: wrap;
   gap: $gap-column;
   margin: 100px 0 120px;
   list-style: none;
 
   @media (max-width: $tablet-max) {
-    flex-wrap: wrap;
     justify-content: center;
     margin: 80px 0;
   }
@@ -92,4 +92,35 @@
   line-height: 33px;
   color: #fff;
   background-color: rgba(0, 0, 0, .4);
+}
+
+// portfolio.html:
+
+.portfolio_list__margin-mod {
+  margin-top: 40px;
+}
+
+.portfolio_filters-tags {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 80px;
+  list-style: none;
+}
+
+.portfolio_tag-item {
+
+}
+
+.portfolio_tag-link {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $color-dark;
+  text-decoration: none;
+
+}
+
+.portfolio_tag-link.portfolio_tag-link-activ {
+  color: $color-accent;
 }
