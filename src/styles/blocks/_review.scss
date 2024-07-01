@@ -1,6 +1,11 @@
 .review {
   display: flex;
   gap: 22px;
+
+  @media (max-width: $tablet-max) {
+    gap: 20px;
+  }
+
 }
 
 .review_img {
@@ -9,11 +14,20 @@
   height: 304px;
   border-radius: 50%;
   overflow: hidden;
+
+  @media (max-width: $tablet-max) {
+    width: 236px;
+    height: 236px;
+  }
 }
 
 .review_user-desc {
   padding: 34px 0;
 
+  @media (max-width: $tablet-max) {
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
 }
 
 .review_ava {
@@ -25,10 +39,21 @@
 .review_user-name {
   font-size: 48px;
   line-height: 65px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 36px;
+    line-height: 49px;
+  }
 }
 
 .review_user-review {
   margin-top: 40px;
   font-size: 24px;
   line-height: 32.68px;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

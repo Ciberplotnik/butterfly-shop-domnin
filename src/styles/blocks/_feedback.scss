@@ -1,5 +1,9 @@
 .feedback {
   padding: 130px 26px;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 10px;
+  }
 }
 
 .feedback_inner {
@@ -8,13 +12,23 @@
 
 .feedback_title {
   @include section-title;
+
+  @media (max-width: $tablet-max) {
+    font-size: 60px;
+    line-height: 82px;
+  }
 }
 
 .feedback_row {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 128px;
   margin-top: 80px;
+
+  @media (max-width: $tablet-max) {
+    gap: 20px;
+  }
 }
 
 .feedback_item {
@@ -28,5 +42,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (max-width: $tablet-max) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
