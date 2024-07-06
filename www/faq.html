@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вопрос-ответ. Магазин галстуков-бабочек</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_inner">
+      <div class="header_row">
+        <div class="header_logo">
+          <a href="index.html" class="main-logo">Butterfly</a>
+        </div>
+        <nav class="main-nav">
+          <ul class="header_list">
+            <li>
+              <a href="portfolio.html" class="header_item">Каталог</a>
+            </li>
+            <li>
+              <a href="feedback.html" class="header_item">Отзывы</a>
+            </li>
+            <li>
+              <a href="contacts.html" class="header_item">Контакты</a>
+            </li>
+            <li>
+              <a href="faq.html" class="header_item">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header_burger">
+          <a class="burger" style="background-image: url(images/burger-menu.svg);"></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="faq">
+    <div class="faq_inner">
+      <h1 class="faq_title">Как мы работаем</h1>
+      <div class="faq_accordions">
+        <div class="accordion">
+          <button class="accordion_btn js-accordion-btn">
+            <span class="accordion_title">Как можно оплатить заказ?</span>
+            <span class="accordion_icon"></span>
+          </button>
+          <div class="accordion_content">
+            <ul class="accordion_content-list">
+              <li class="accordion_content-item">Банковские карты. Самый распространённый способ совершить платёж.</li>
+              <li class="accordion_content-item">Платеж через СБП. Оплата по QR-коду или по платёжной ссылке через Систему быстрых платежей.</li>
+              <li class="accordion_content-item">Электронные кошельки. В этом случае у покупателя есть электронный кошелёк, открытый в одном из платёжных сервисов.</li>
+              <li class="accordion_content-item">Оплата наличными при получении. Часть покупателей может оплатить товар курьеру при получении.</li>
+            </ul>
+          </div>
+          <button class="accordion_btn js-accordion-btn">
+            <span class="accordion_title">Как можно оплатить услуги ремонта?</span>
+            <span class="accordion_icon"></span>
+          </button>
+          <div class="accordion_content">
+            <p>Принимая во внимание показатели успешности, реализация намеченных плановых заданий является качественно новой ступенью распределения внутренних резервов и ресурсов. В частности, перспективное планирование в значительной степени обусловливает важность укрепления моральных ценностей. Имеется спорная точка зрения, гласящая примерно следующее: независимые государства представлены в исключительно положительном свете. Сложно сказать, почему активно развивающиеся страны третьего мира, вне зависимости от их уровня, должны быть разоблачены.</p>
+            <p>Учитывая ключевые сценарии поведения, понимание сути ресурсосберегающих технологий требует определения и уточнения модели развития. Также как высокое качество позиционных исследований требует анализа поставленных обществом задач. А ещё интерактивные прототипы будут призваны к ответу.</p>
+          </div>
+          <button class="accordion_btn js-accordion-btn">
+            <span class="accordion_title">Как получить готовый заказ?</span>
+            <span class="accordion_icon"></span>
+          </button>
+          <div class="accordion_content">
+            <p>Принимая во внимание показатели успешности, реализация намеченных плановых заданий является качественно новой ступенью распределения внутренних резервов и ресурсов. В частности, перспективное планирование в значительной степени обусловливает важность укрепления моральных ценностей. Имеется спорная точка зрения, гласящая примерно следующее: независимые государства представлены в исключительно положительном свете. Сложно сказать, почему активно развивающиеся страны третьего мира, вне зависимости от их уровня, должны быть разоблачены.</p>
+            <p>Учитывая ключевые сценарии поведения, понимание сути ресурсосберегающих технологий требует определения и уточнения модели развития. Также как высокое качество позиционных исследований требует анализа поставленных обществом задач. А ещё интерактивные прототипы будут призваны к ответу.</p>
+          </div>
+        </div>
+        <div class="accordion_text"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="order">
+    <div class="order_inner">
+      <h2 class="order_title">Закажи пошив</h2>
+      <p class="order_text">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
+        встрече он снимет мерки и поможет определиться с тканью</p>
+      <form action="#" method="post" class="order-form">
+        <div class="order-form_wrap">
+          <label for="name" class="order-form_label">Ваше имя</label>
+          <input id="name" name="name" type="text" class="order-form_input" placeholder="Иван Иванов">
+        </div>
+        <div class="order-form_wrap">
+          <label for="phone" class="order-form_label">Телефон</label>
+          <input id="phone" name="phone" type="tel" class="order-form_input" placeholder="+7 800 888-88-88">
+        </div>
+        <div class="order-form_wrap order-form_wrap__special">
+          <button type="submit" class="btn btn-full">Заказать</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer_inner">
+    <div class="footer_row">
+      <a href="#" class="main-logo main-logo__width-mobile">Butterfly</a>
+      <a href="#" type="tel" class="footer_contact-phone">+7 812 800-80-80</a>
+      <ul class="footer_socials">
+        <li class="footer_social-icon"><a href="#" class="footer_link" title="нельзяграм" style="background-image: url(images/icon-inst.svg);"></a></li>
+        <li class="footer_social-icon"><a href="#" class="footer_link" title="наверное я еще популярный" style="background-image: url(images/icon-fb.svg);"></a></li>
+        <li class="footer_social-icon"><a href="#" class="footer_link" title="у нас много интересных каналов" style="background-image: url(images/icon-tgm.svg);"></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="scripts/script.js"></script>
+</body>
+</html>

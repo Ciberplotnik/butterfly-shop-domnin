@@ -1,0 +1,59 @@
+.accordion {
+
+}
+
+.accordion_btn {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px;
+  width: 100%;
+  border: 1px solid rgba($color-accent, .2);
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.accordion_title {
+  display: inline-block;
+  margin-right: auto;
+  font-family: $font;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 49px;
+  text-align: left;
+}
+
+.accordion_icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/accordion-icon-plus.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.accordion_content-list {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: left;
+  list-style:  none;
+
+}
+
+.accordion_content {
+  padding-left: 30px;
+  padding-right: 74px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: left;
+  border: 1px solid rgba($color-accent, .2);
+  border-radius: 4px;
+
+  & > p ~ p {
+    margin-top: 25px; // равен высоте строки параграфа
+  }
+}
