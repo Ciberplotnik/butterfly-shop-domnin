@@ -3,15 +3,30 @@ $(document).ready(function() {
   let prevAccordionBtn;
 
   $('.js-accordion-btn').on('click', function () {
+
     if (prevAccordionBtn === this) {
       $(this).next().slideToggle();
       return;
     }
 
+
+
+
+    // $('.js-accordion-icon').addClass('toggle_icon-plus');
+    $(this).children('.js-accordion-icon').toggleClass('toggle_icon-plus toggle_icon-minus')
+
+
     $('.js-accordion-btn').next().slideUp();
     $(this).next().slideDown();
     prevAccordionBtn = this;
+
   })
+
+
+
+
+
+
 
   $('.js-tabs-link-city').on('click', function (event) {
     event.preventDefault();
