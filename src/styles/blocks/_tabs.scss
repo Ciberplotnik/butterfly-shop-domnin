@@ -1,0 +1,33 @@
+.tabs {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  min-width: 748px;
+  list-style: none;
+
+  @media (max-width: $tablet-max) {
+    gap: 30px;
+    margin-top: 70px;
+  }
+
+  @media (max-width: $mobile-max) {
+    justify-content: left;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.tabs_link-city {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+  color: $color-dark;
+}
+
+.tabs_item-city .active {
+  color: $color-accent;
+}

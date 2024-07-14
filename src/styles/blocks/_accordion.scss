@@ -6,11 +6,16 @@
   display: flex;
   align-items: center;
   padding: 25px 30px;
+  margin-top: 40px;
   width: 100%;
   border: 1px solid rgba($color-accent, .2);
   border-radius: 4px;
   background-color: transparent;
   cursor: pointer;
+
+  &.accordion_btn-margin-top {
+    margin-top: 0;
+  }
 }
 
 .accordion_title {

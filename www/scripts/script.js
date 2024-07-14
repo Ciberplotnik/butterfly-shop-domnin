@@ -13,25 +13,64 @@ $(document).ready(function() {
     prevAccordionBtn = this;
   })
 
-  let aaa = $('.accordion_content');
+  $('.js-tabs-link-city').on('click', function (event) {
+    event.preventDefault();
 
-  console.log(aaa);
+    const index = $(this).index('.js-tabs-link-city');
 
-  function onAnyChange(){
-    if ($('.js-accordion-btn').next().css('display') != 'none'){
-    $(this).children('accordion_icon').css({
-      'background-image': 'url(../images/accordion-icon-minus.svg)',
-    })
-    }
-  }
+    $('.js-tabs-link-city').removeClass('active');
+    $(this).addClass('active');
 
-
+    $('.js-contacts-card').removeClass('active');
+    $('.js-contacts-card').eq(index).addClass('active');
+  })
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // const tabActiveClass = 'active';
+  // const $tabsLinkCity = $('.js-tabs-link-city');
+  // const $tabsContent = $('.js-contacts-card');
+
+  // $tabsLink.on('click', function(event) {
+  //   event.preventDefault();
+
+  //   const index = $(this).index('.js-tabs-link');
+  //   console.log(index);
+
+  //   $tabsLink.removeClass(tabActiveClass);
+  //   $(this).addClass(tabActiveClass);
+
+  //   $tabsContent.removeClass(tabActiveClass);
+  //   $tabsContent.eq(index).addClass(tabActiveClass);
+  // });
 
 
 
