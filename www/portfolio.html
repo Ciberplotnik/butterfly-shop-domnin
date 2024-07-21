@@ -15,7 +15,7 @@
         <div class="header_logo">
           <a href="index.html" class="main-logo">Butterfly</a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav js-main-nav">
           <ul class="header_list">
             <li>
               <a href="portfolio.html" class="header_item">Каталог</a>
@@ -44,27 +44,27 @@
         <h2 class="portfolio_title">Наши работы</h2>
         <ul class="portfolio_filters-tags">
           <li class="portfolio_tag-item">
-            <a href="#" class="portfolio_tag-link portfolio_tag-link-activ">ВСЕ</a>
+            <a href="#" data-filter="all" class="portfolio_tag-link portfolio_tag-link-activ">ВСЕ</a>
           </li>
           <li class="portfolio_tag-item">
-            <a href="#" class="portfolio_tag-link">СТРОГИЕ</a>
+            <a href="#" class="portfolio_tag-link js-portfolio-tag-link" data-filter="strict">СТРОГИЕ</a>
           </li>
           <li class="portfolio_tag-item">
-            <a href="#" class="portfolio_tag-link">ВЕСЕЛЫЕ</a>
+            <a href="#" class="portfolio_tag-link" data-filter="happy">ВЕСЕЛЫЕ</a>
           </li>
           <li class="portfolio_tag-item">
-            <a href="#" class="portfolio_tag-link">ДЛЯ ЖИВОТНЫХ</a>
+            <a href="#" class="portfolio_tag-link" data-filter="animals">ДЛЯ ЖИВОТНЫХ</a>
           </li>
           <li class="portfolio_tag-item">
-            <a href="#" class="portfolio_tag-link">ДЕТСКИЕ</a>
+            <a href="#" class="portfolio_tag-link" data-filter="child">ДЕТСКИЕ</a>
           </li>
           <li class="portfolio_tag-item">
-            <a href="#" class="portfolio_tag-link">ДЛЯ ВЗРОСЛЫХ</a>
+            <a href="#" class="portfolio_tag-link" data-filter="bigs">ДЛЯ ВЗРОСЛЫХ</a>
           </li>
         </ul>
 
-        <ul class="portfolio_list portfolio_list__margin-mod">
-          <li class="portfolio_item">
+        <ul class="portfolio_list portfolio_list__margin-mod js-portfolio-list">
+          <li class="portfolio_item" data-type="strict">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic1.jpg"
                 alt="синий галстук-бабочка расположен на подушечке в светлой подарочной коробочке"
@@ -72,7 +72,7 @@
               <figcaption class="img-caption">Бабочка такая</figcaption>
             </figure>
           </li>
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="strict">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic2.jpg"
                 alt="представлен синий галстук-бабочка с принтом ввиде стрекоз в двух видах: развёрнутом и упакованном в коробку"
@@ -80,14 +80,14 @@
               <figcaption class="img-caption">Бабочка растакая</figcaption>
             </figure>
           </li>
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="bigs">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic3.jpg"
                 alt="на мужчине в костюме представлен галстук-бабочка в шотландскую клетку." class="portfolio-img">
               <figcaption class="img-caption">Бабочка сякая</figcaption>
             </figure>
           </li>
-          <li class="portfolio_item portfolio_item__hidden">
+          <li class="portfolio_item portfolio_item__hidden" data-type="animals">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic4.jpg" alt="серый кот со светло-розовым галстуком-бабочкой на шее"
                 class="portfolio-img">
@@ -95,7 +95,7 @@
             </figure>
           </li>
 
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="bigs">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic5.jpg"
                 alt="на мужчине в костюме представлен галстук-бабочка в бежево-молочную мелкую клетку."
@@ -103,7 +103,7 @@
               <figcaption class="img-caption">Бабочка такая</figcaption>
             </figure>
           </li>
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="bigs">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic6.jpg"
                 alt="на мужчине в костюме представлен галстук-бабочка в бордовую мелкую клетку."
@@ -111,14 +111,14 @@
               <figcaption class="img-caption">Бабочка растакая</figcaption>
             </figure>
           </li>
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="child">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic7.jpg"
                 alt="на голове младенца представлен белый бант-бабочка" class="portfolio-img">
               <figcaption class="img-caption">Бабочка сякая</figcaption>
             </figure>
           </li>
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="bigs">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic8.jpg" alt="на мужчине в костюме представлен классический черный галстук-бабочка."
                 class="portfolio-img">
@@ -126,7 +126,7 @@
             </figure>
           </li>
 
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="strict">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic9.jpg"
                 alt="представлены розовые галстук-бабочка и галстук, упакованные в коробку"
@@ -134,7 +134,7 @@
               <figcaption class="img-caption">Бабочка такая</figcaption>
             </figure>
           </li>
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="strict">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic10.jpg"
                 alt="представлен синий галстук-бабочка с принтом ввиде стрекоз в двух видах: развёрнутом и упакованном в коробку"
@@ -142,14 +142,14 @@
               <figcaption class="img-caption">Бабочка растакая</figcaption>
             </figure>
           </li>
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="bigs">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic11.jpg"
                 alt="на мужчине в костюме представлен галстук-бабочка с золотым орнаментом бабочки." class="portfolio-img">
               <figcaption class="img-caption">Бабочка сякая</figcaption>
             </figure>
           </li>
-          <li class="portfolio_item">
+          <li class="portfolio_item" data-type="happy">
             <figure class="portfolio_fig">
               <img src="images/portfolio-pic12.jpg" alt="на мужчине-клоуне представлен большой клоунский галстук-бабочка жёлтый в большой разноцветный горошек."
                 class="portfolio-img">
