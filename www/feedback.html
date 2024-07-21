@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Отзывы о наших галстук-бабочках</title>
   <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header_inner">
@@ -39,11 +41,8 @@
     <section class="feedback">
       <div class="feedback_inner">
         <h2 class="feedback_title">Отзывы</h2>
-        <div class="feedback_row">
-          <div class="feedback_item">
-            <a href="#" class="feedback_arrow" title="Нажми для перехода влево" style="background-image: url(images/feadback-arrow-left.svg);"></a>
-          </div>
-          <div class="feedback_item">
+        <div class="review-wrap js-review-wrap">
+          <div>
             <div class="review">
               <div class="review_img">
                 <img src="images/feedback-ava.png" alt="аватар клиента" class="review_ava">
@@ -53,13 +52,59 @@
                   Лидия Ивановна
                 </p>
                 <p class="review_user-review">
-                  Пацаны красавчики! Быстро и аккуратно починили мой лододос!<br>А так же вынесли за собой весь мусор! Еще и в шапке ходют - ван лав!
+                  Я, как старая злая бабка, хочу поделиться своим отзывом о магазине мужских бабочек. Этот магазин порадовал меня своим ассортиментом и качеством товаров. Здесь я нашла множество красивых и стильных бабочек разных цветов и размеров.<br>
+                  Продавцы были вежливы и внимательны, помогли мне выбрать подходящую модель. Цены в магазине доступные, а ещё часто проходят акции и скидки. В общем, рекомендую этот магазин всем любителям бабочек и аксессуаров!
                 </p>
               </div>
             </div>
           </div>
-          <div class="feedback_item">
-            <a href="#" class="feedback_arrow" title="Нажми для перехода вправо" style="background-image: url(images/feadback-arrow-right.svg);"></a>
+          <div>
+            <div class="review">
+              <div class="review_img">
+                <img src="images/feedback-ava-grut.png" alt="аватар клиента" class="review_ava">
+              </div>
+              <div class="review_user-desc">
+                <p class="review_user-name">
+                  Я есть Грут
+                </p>
+                <p class="review_user-review">
+                  Я, Грут, хочу поделиться своим впечатлением о магазине мужских бабочек. Это место порадовало меня своим ассортиментом и высоким качеством товаров. Здесь я нашёл множество стильных и оригинальных бабочек разных цветов и размеров.<br>
+                  Сотрудники магазина были дружелюбны и профессиональны, они помогли мне выбрать подходящую модель. Цены в магазине приемлемые, а ещё часто проводятся акции и скидки. Рекомендую этот магазин всем ценителям стиля и качества!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="review">
+              <div class="review_img">
+                <img src="images/feedback-ava-belka.png" alt="аватар клиента" class="review_ava">
+              </div>
+              <div class="review_user-desc">
+                <p class="review_user-name">
+                  Белка Сид
+                </p>
+                <p class="review_user-review">
+                  Белка Сид из Ледникового периода рекомендует магазин мужских бабочек! Здесь вы найдёте огромный выбор стильных аксессуаров, а опытные сотрудники помогут подобрать идеальную бабочку.<br>
+                  Цены доступные, а качество товара на высоте. Обязательно загляните в этот магазин и порадуйте себя и своих друзей красивыми бабочками!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="review">
+              <div class="review_img">
+                <img src="images/feedback-ava-moana.png" alt="аватар клиента" class="review_ava">
+              </div>
+              <div class="review_user-desc">
+                <p class="review_user-name">
+                  Моана
+                </p>
+                <p class="review_user-review">
+                  В этом магазине я нашла множество красивых и качественных бабочек для своего мужа. Сотрудники были очень доброжелательны и помогли мне выбрать подходящую модель.<br>
+                  Цены здесь вполне доступные, а качество товара на высшем уровне. Я рекомендую этот магазин всем, кто хочет порадовать своего мужчину стильным аксессуаром.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -89,16 +134,21 @@
     <div class="footer_inner">
       <div class="footer_row">
         <a href="#" class="main-logo main-logo__width-mobile">Butterfly</a>
-        <a href="#" type="tel" class="footer_contact-phone">+7 812 800-80-80</a>
+        <a href="tel:+78128008080" class="footer_contact-phone">+7 812 800-80-80</a>
         <ul class="footer_socials">
-          <li class="footer_social-icon"><a href="#" class="footer_link" title="нельзяграм" style="background-image: url(images/icon-inst.svg);"></a></li>
-          <li class="footer_social-icon"><a href="#" class="footer_link" title="наверное я еще популярный" style="background-image: url(images/icon-fb.svg);"></a></li>
-          <li class="footer_social-icon"><a href="#" class="footer_link" title="у нас много интересных каналов" style="background-image: url(images/icon-tgm.svg);"></a></li>
+          <li class="footer_social-icon"><a href="#" class="footer_link" title="нельзяграм"
+              style="background-image: url(images/icon-inst.svg);"></a></li>
+          <li class="footer_social-icon"><a href="#" class="footer_link" title="наверное я еще популярный"
+              style="background-image: url(images/icon-fb.svg);"></a></li>
+          <li class="footer_social-icon"><a href="#" class="footer_link" title="у нас много интересных каналов"
+              style="background-image: url(images/icon-tgm.svg);"></a></li>
         </ul>
       </div>
     </div>
   </footer>
   <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/slick.min.js"></script>
   <script src="scripts/script.js"></script>
 </body>
+
 </html>

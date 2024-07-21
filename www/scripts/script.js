@@ -59,7 +59,9 @@ $(document).ready(function() {
 
   })
 
-
+  $('.js-review-wrap').slick({
+    dots: true,
+  });
 
 
 

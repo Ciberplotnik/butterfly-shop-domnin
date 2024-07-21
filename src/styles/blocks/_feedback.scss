@@ -12,40 +12,27 @@
 
 .feedback_title {
   @include section-title;
+  margin-bottom: 77px;
 
   @media (max-width: $tablet-max) {
+    margin-bottom: 70px;
     font-size: 60px;
     line-height: 82px;
   }
 }
 
-.feedback_row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 128px;
-  margin-top: 80px;
 
-  @media (max-width: $tablet-max) {
-    gap: 20px;
-  }
-}
+// .feedback_arrow {
+//   display: block;
+//   width: 60px;
+//   height: 60px;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
 
-.feedback_item {
-
-}
-
-.feedback_arrow {
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @media (max-width: $tablet-max) {
-    width: 44px;
-    height: 44px;
-  }
-}
+//   @media (max-width: $tablet-max) {
+//     width: 44px;
+//     height: 44px;
+//   }
+// }
 

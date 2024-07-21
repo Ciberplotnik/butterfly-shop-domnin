@@ -1,11 +1,69 @@
+.review-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 26px;
+
+  & > div {
+    flex-shrink: 0;
+    width: calc(100% - 60px * 2 - 26px * 2 - 20px * 2);
+  }
+  button {
+    flex-shrink: 0;
+  }
+}
+
 .review {
   display: flex;
   gap: 22px;
+  max-width: 844px;
+
 
   @media (max-width: $tablet-max) {
     gap: 20px;
   }
 
+}
+
+.slick-arrow {
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 solid red;
+  cursor: pointer;
+}
+
+.slick-prev {
+  background-image: url(../images/feadback-arrow-left.svg);
+}
+
+.slick-next {
+  background-image: url(../images/feadback-arrow-right.svg);
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  list-style: none;
+
+  button {
+    width: 8px;
+    height: 8px;
+    font-size: 0;
+    border: 1px solid $color-dark;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
+
+  .slick-active button {
+    background-color: $color-accent;
+  }
 }
 
 .review_img {
