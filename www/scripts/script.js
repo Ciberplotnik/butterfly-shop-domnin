@@ -32,6 +32,9 @@ $(document).ready(function() {
   $('.js-portfolio-tag-link').on('click', function (event) {
     event.preventDefault();
 
+    $('.js-portfolio-tag-link').removeClass('portfolio_tag-link-activ');
+    $(this).addClass('portfolio_tag-link-activ');
+
     let dataFilter = $(this).data('filter');
 
     if (dataFilter === 'all') {

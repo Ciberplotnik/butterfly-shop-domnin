@@ -63,6 +63,8 @@
 
   .slick-active button {
     background-color: $color-accent;
+    border: 1px solid $color-accent;
+    box-shadow: 0 0 10px $color-accent;
   }
 }
 
